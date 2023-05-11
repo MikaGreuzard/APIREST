@@ -7,6 +7,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Metadata\ApiResource;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: ReasonRepository::class)]
 #[ApiResource()]
@@ -18,6 +19,7 @@ class Reason
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups('visit')]
     private ?string $reasonName = null;
 
     #[ORM\OneToMany(mappedBy: 'reason', targetEntity: Visit::class)]

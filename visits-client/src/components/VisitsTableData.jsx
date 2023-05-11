@@ -33,12 +33,12 @@ export default function VisitsTableData(props) {
     const config = {
       headers: { Authorization: `Bearer ${token}` },
     };
-    const newVisit = {
+    const leavingDate = {
       leavingDate: dayjs(),
     };
-    console.log(newVisit);
+    console.log(leavingDate);
     axios
-      .put(`http://127.0.0.1:8000/api/visits/${props.visitor.id}`, newVisit)
+      .put(`http://127.0.0.1:8000/api/visits/${props.visitor.id}`, leavingDate)
       .then((response) => {
         console.log(response);
         window.location.reload();

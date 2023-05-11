@@ -164,6 +164,6 @@ class __TwigTemplate_e98f30ddb17cd3af90817fe18f6169c0 extends Template
         {% block body %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "C:\\Users\\Etudiant\\Desktop\\VisiTrack\\visits-api\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\Etudiant\\Desktop\\APIREST\\visits-api\\templates\\base.html.twig");
     }
 }

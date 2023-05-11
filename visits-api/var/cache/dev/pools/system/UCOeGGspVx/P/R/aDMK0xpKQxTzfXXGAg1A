@@ -26,6 +26,14 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                     'visits' => $o[4],
                 ],
             ],
+            'groups' => [
+                2 => [
+                    'visit',
+                ],
+                [
+                    'visit',
+                ],
+            ],
         ],
     ],
     $o[0],

@@ -85,7 +85,7 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                 1 => 'object',
             ],
             'nullable' => [
-                1 => true,
+                1 => false,
             ],
             'class' => [
                 1 => 'App\\Entity\\Employee',

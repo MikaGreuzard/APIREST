@@ -165,6 +165,6 @@ class __TwigTemplate_bd6970d5e379e67e0400c1fabc83475a extends Template
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "C:\\Users\\Etudiant\\Desktop\\VisiTrack\\visits-api\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "C:\\Users\\Etudiant\\Desktop\\APIREST\\visits-api\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\explain.html.twig");
     }
 }

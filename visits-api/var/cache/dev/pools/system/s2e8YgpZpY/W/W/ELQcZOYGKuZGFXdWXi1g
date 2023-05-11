@@ -88,7 +88,11 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                 null,
             ],
             'normalizationContext' => [
-                null,
+                [
+                    'groups' => [
+                        'visit',
+                    ],
+                ],
             ],
             'denormalizationContext' => [
                 null,
@@ -337,12 +341,36 @@ return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\
                 10 => null,
             ],
             'normalizationContext' => [
-                2 => null,
-                4 => null,
-                null,
-                null,
-                8 => null,
-                10 => null,
+                2 => [
+                    'groups' => [
+                        'visit',
+                    ],
+                ],
+                4 => [
+                    'groups' => [
+                        'visit',
+                    ],
+                ],
+                [
+                    'groups' => [
+                        'visit',
+                    ],
+                ],
+                [
+                    'groups' => [
+                        'visit',
+                    ],
+                ],
+                8 => [
+                    'groups' => [
+                        'visit',
+                    ],
+                ],
+                10 => [
+                    'groups' => [
+                        'visit',
+                    ],
+                ],
             ],
             'denormalizationContext' => [
                 2 => null,

@@ -475,6 +475,6 @@ class __TwigTemplate_8b210a158e6b15c43a5e9c7242eeed2f extends Template
 
 </body>
 </html>
-", "@ApiPlatform/SwaggerUi/index.html.twig", "C:\\Users\\Etudiant\\Desktop\\VisiTrack\\visits-api\\vendor\\api-platform\\core\\src\\Symfony\\Bundle\\Resources\\views\\SwaggerUi\\index.html.twig");
+", "@ApiPlatform/SwaggerUi/index.html.twig", "C:\\Users\\Etudiant\\Desktop\\APIREST\\visits-api\\vendor\\api-platform\\core\\src\\Symfony\\Bundle\\Resources\\views\\SwaggerUi\\index.html.twig");
     }
 }
