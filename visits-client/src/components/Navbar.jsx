@@ -6,7 +6,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import jwtDecode from "jwt-decode";
-import companyLogo from '../essilor-image.png';
+import companyLogo from '../LogoMikaCorp2.png';
 
 
 const navigation = [
@@ -25,7 +25,7 @@ export default function Navbar(props) {
   const decodedToken = jwtDecode(token);
 
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-600">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -79,7 +79,7 @@ export default function Navbar(props) {
                 <a href="/logout">
                   <button
                     type="button"
-                    className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                    className="rounded-full bg-gray-600 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                   >
                     <span className="sr-only">View notifications</span>
                     <ArrowLeftOnRectangleIcon

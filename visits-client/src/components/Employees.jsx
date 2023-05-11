@@ -64,8 +64,8 @@ export default function Employees() {
   return (
     <>
       <Navbar current="employees" />
-      <form className="max-w-6xl mx-auto px-6 py-12">
-        <div className="bg-w<hite shadow rounded-lg p-10">
+      <form className="max-w-6xl rounded-lg mx-auto px-6 py-12 shadow-xl mt-8">
+        <div className="bg-white rounded-lg p-10 shadow-inner ">          
           <h1 className="text-3xl font-bold pb-6">
             Saisie d'un nouvel employé
           </h1>
@@ -118,7 +118,7 @@ export default function Employees() {
               <a href="/visits">
               <button
               type="button"
-              className="px-4 py-2 mr-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+              className="px-4 py-2 mr-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-600 rounded-md hover:bg-red-700 focus:outline-none focus:bg-blue-500"
             >
               Annuler
             </button>
@@ -126,7 +126,7 @@ export default function Employees() {
           <button
             type="submit"
             onClick={handleSubmit}
-            className="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-green-600 rounded-md hover:bg-green-500 focus:outline-none focus:bg-green-500"
+            className="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-green-600 rounded-md hover:bg-green-700 focus:outline-none focus:bg-green-500"
           >
             Enregistrer
           </button>
@@ -136,8 +136,8 @@ export default function Employees() {
   </form>
   <div className="max-w-6xl mx-auto px-6 py-4 overflow-y-scroll" style={{ maxHeight: "calc(85vh - 400px)" }}>
   <table className="table-auto w-full">
-      <thead>
-        <tr className="bg-gray-200 text-gray-700">
+    <thead className="sticky top-0 bg-gray-600 text-gray-50 rounded">
+        <tr className="bg-gray-600 text-gray-50 rounded">
           <th className="px-4 py-2">Prénom</th>
           <th className="px-4 py-2">Nom</th>
         </tr>

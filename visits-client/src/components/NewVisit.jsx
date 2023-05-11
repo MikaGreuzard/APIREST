@@ -77,8 +77,8 @@ export default function NewVisits() {
     return (
     <>
       <Navbar current="newvisit" />
-      <form className="max-w-6xl mx-auto px-6 py-12">
-        <div className="bg-w<hite shadow rounded-lg p-10">
+      <form className="max-w-6xl rounded-lg mx-auto px-6 py-12 shadow-xl mt-8">
+        <div className="bg-white rounded-lg p-10 shadow-inner ">
           <h1 className="text-3xl font-bold pb-6">
             Saisie d'une nouvelle visite
           </h1>
@@ -87,7 +87,7 @@ export default function NewVisits() {
             <div>
               <label
                 htmlFor="firstname"
-                className="block text-sm font-medium leading-5 text-gray-700"
+                className="block text-sm font-medium leading-5 text-gray-900"
               >
                 Prénom
               </label>
@@ -108,7 +108,7 @@ export default function NewVisits() {
             <div>
               <label
                 htmlFor="lastname"
-                className="block text-sm font-medium leading-5 text-gray-700"
+                className="block text-sm font-medium leading-5 text-gray-900"
               >
                 Nom
               </label>
@@ -129,7 +129,7 @@ export default function NewVisits() {
             <div>
               <label
                 htmlFor="encouteredPerson"
-                className="block text-sm font-medium leading-5 text-gray-700"
+                className="block text-sm font-medium leading-5 text-gray-900"
               >
                 Personne rencontrée
               </label>
@@ -143,7 +143,7 @@ export default function NewVisits() {
                   onChange={handleChange}
 
                 >
-                <option></option>
+                <option>Veuillez sélectionner un employé</option>
                     {employees.map((employee) => (
                       <option key={employee.id} value={`/api/employees/${employee.id}`}>
                         {employee.firstname} {employee.lastname}
@@ -156,7 +156,7 @@ export default function NewVisits() {
             <div>
               <label
                 htmlFor="reason"
-                className="block text-sm font-medium leading-5 text-gray-700"
+                className="block text-sm font-medium leading-5 text-gray-900"
               >
                 Motif de la visite
               </label>
@@ -169,7 +169,7 @@ export default function NewVisits() {
                   className="block w-full form-select sm:text-sm sm:leading-5"
                   onChange={handleChange}
                     >
-                      <option></option>
+                      <option>Veuillez sélectionner un motif de visite</option>
                       {reasons.map((reason) => (
                         <option key={reason.id} value={`/api/reasons/${reason.id}`}>{reason.reasonName}</option>
                       ))}
@@ -183,7 +183,7 @@ export default function NewVisits() {
               <a href="/visits">
               <button
               type="button"
-              className="px-4 py-2 mr-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
+              className="px-4 py-2 mr-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-600 rounded-md hover:bg-red-700 focus:outline-none focus:bg-blue-500"
             >
               Annuler
             </button>
@@ -191,7 +191,7 @@ export default function NewVisits() {
           <button
             type="submit"
             onClick={handleSubmit}
-            className="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-green-600 rounded-md hover:bg-green-500 focus:outline-none focus:bg-green-500"
+            className="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-green-600 rounded-md hover:bg-green-700 focus:outline-none focus:bg-green-500"
           >
             Enregistrer
           </button>
