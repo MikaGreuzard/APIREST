@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import companyLogo from '../essilor-image-login.png';
+import companyLogo from '../LogoMikaCorp.png';
 
 
 export default function Login() {
@@ -19,12 +19,12 @@ export default function Login() {
       <div className="w-full max-w-md space-y-8">
         <div>
           <img
-            className="mx-auto h-12 w-auto"
+            className="mx-auto h-15 w-auto"
             src={companyLogo}
             alt="Your Company"
           />
           <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-            Sign in to your account
+            Veuillez rentrer vos identifiants
           </h2>
         </div>
         <form className="mt-8 space-y-6" action="#" method="POST">
@@ -32,7 +32,7 @@ export default function Login() {
           <div className="-space-y-px rounded-md shadow-sm">
             <div>
               <label htmlFor="username" className="sr-only">
-                Email address
+                Email
               </label>
               <input
                 id="username"
@@ -42,13 +42,13 @@ export default function Login() {
                 autoComplete="email"
                 required
                 className="relative block w-full rounded-t-md border-0 px-1.5 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                placeholder="Email address"
+                placeholder="Identifiant"
                 onChange={handleChange}
               />
             </div>
             <div>
               <label htmlFor="password" className="sr-only">
-                Password
+                Mot de passe
               </label>
               <input
                 id="password"
@@ -58,7 +58,7 @@ export default function Login() {
                 autoComplete="current-password"
                 required
                 className="relative block w-full rounded-b-md border-0 px-1.5 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                placeholder="Password"
+                placeholder="Mot de passe"
                 onChange={handleChange}
               />
             </div>
@@ -83,7 +83,7 @@ export default function Login() {
                   />
                 </svg>
               </span>
-              Sign in
+              Connexion
             </button>
           </div>
           <div>
