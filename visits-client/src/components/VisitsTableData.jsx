@@ -38,7 +38,7 @@ export default function VisitsTableData(props) {
     };
     console.log(leavingDate);
     axios
-      .put(`http://127.0.0.1:8000/api/visits/${props.visitor.id}`, leavingDate)
+      .put(`http://127.0.0.1:8000/api/visits/${props.visitor.id}`, leavingDate, config)
       .then((response) => {
         console.log(response);
         window.location.reload();
