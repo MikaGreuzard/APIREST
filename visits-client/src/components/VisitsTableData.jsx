@@ -15,6 +15,8 @@ export default function VisitsTableData(props) {
           <td className="text-center px-4 py-2">{props.visitor.lastname}</td>
           <td className="text-center px-4 py-2">{props.visitor.reason.reasonName}</td>
           <td className="text-center px-4 py-2">{props.visitor.encouteredPerson.firstname} {props.visitor.encouteredPerson.lastname}</td>
+          <td className="text-center px-4 py-2">{props.visitor.encouteredPerson.firstname} {props.visitor.encouteredPerson.lastname}</td>
+          <td className="text-center px-4 py-2">{props.visitor.encouteredPerson.firstname} {props.visitor.encouteredPerson.lastname}</td>
           <td className="text-center px-4 py-2">{dayjs(props.visitor.entranceDate).format('DD/MM/YY HH:mm')}</td>
           <td className="text-center px-4 py-2">
             <button onClick={handleClick}>

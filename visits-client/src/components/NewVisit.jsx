@@ -151,6 +151,42 @@ export default function NewVisits() {
                     ))}
                 </select>
               </div>
+              <div className="mt-1 relative rounded-md shadow-sm">
+                <select
+                  id="encouteredPerson"
+                  name="encouteredPerson"
+                  value={newVisit.encouteredPerson}
+                  autoComplete="off"
+                  className="block w-full form-select sm:text-sm sm:leading-5"
+                  onChange={handleChange}
+
+                >
+                <option>Veuillez sélectionner un employé</option>
+                    {employees.map((employee) => (
+                      <option key={employee.id} value={`/api/employees/${employee.id}`}>
+                        {employee.firstname} {employee.lastname}
+                      </option>
+                    ))}
+                </select>
+              </div>
+              <div className="mt-1 relative rounded-md shadow-sm">
+                <select
+                  id="encouteredPerson"
+                  name="encouteredPerson"
+                  value={newVisit.encouteredPerson}
+                  autoComplete="off"
+                  className="block w-full form-select sm:text-sm sm:leading-5"
+                  onChange={handleChange}
+
+                >
+                <option>Veuillez sélectionner un employé</option>
+                    {employees.map((employee) => (
+                      <option key={employee.id} value={`/api/employees/${employee.id}`}>
+                        {employee.firstname} {employee.lastname}
+                      </option>
+                    ))}
+                </select>
+              </div>
             </div>
 
             <div>
@@ -160,6 +196,36 @@ export default function NewVisits() {
               >
                 Motif de la visite
               </label>
+              <div className="mt-1 relative rounded-md shadow-sm">
+                <select
+                  id="reason"
+                  name="reason"
+                  value={newVisit.reason}
+                  autoComplete="off"
+                  className="block w-full form-select sm:text-sm sm:leading-5"
+                  onChange={handleChange}
+                    >
+                      <option>Veuillez sélectionner un motif de visite</option>
+                      {reasons.map((reason) => (
+                        <option key={reason.id} value={`/api/reasons/${reason.id}`}>{reason.reasonName}</option>
+                      ))}
+                </select>
+              </div>
+              <div className="mt-1 relative rounded-md shadow-sm">
+                <select
+                  id="reason"
+                  name="reason"
+                  value={newVisit.reason}
+                  autoComplete="off"
+                  className="block w-full form-select sm:text-sm sm:leading-5"
+                  onChange={handleChange}
+                    >
+                      <option>Veuillez sélectionner un motif de visite</option>
+                      {reasons.map((reason) => (
+                        <option key={reason.id} value={`/api/reasons/${reason.id}`}>{reason.reasonName}</option>
+                      ))}
+                </select>
+              </div>
               <div className="mt-1 relative rounded-md shadow-sm">
                 <select
                   id="reason"
